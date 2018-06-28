@@ -1,0 +1,63 @@
+
+<div class="container">
+  <header class="conteiner rounded">
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <img src="./../../../../assets/img/logo.png" class="rounded" alt="">
+      </div>
+      <div class="col-md-8 col-sm-12">
+        <h2 class="titulo-pers col-sm-12">ANGULAR 2</h2>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light nav-pers bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div>
+      <a *ngIf="!authenticationService.userLoggedIn" [routerLink]="['login']">(Login)</a>
+      <a *ngIf="authenticationService.userLoggedIn" [routerLink]="['login']" (click)="logout()">
+        {{authenticationService.userLogged.username}} (logout)
+      </a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+      <li routerLinkActive="active">
+        <a [routerLink]="['home']" class="nav-link"><h5>Home</h5></a>
+      </li>
+      <li>
+        <a [routerLink]="['punto1']" class="nav-link"><h5>Punto 1</h5></a>
+      </li>
+      <li>
+        <a [routerLink]="['punto2']" class="nav-link"><h5>Punto 2</h5></a>
+      </li>
+      <li>
+        <a [routerLink]="['punto3']" class="nav-link"><h5>Punto 3</h5></a>
+      </li>
+      <li>
+        <a [routerLink]="['punto4']" class="nav-link"><h5>Punto 4</h5></a>
+      </li>
+      <li>
+        <a [routerLink]="['punto5']" class="nav-link"><h5>Punto 5</h5></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle fa-dropbox" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <h5>Punto 5 </h5>
+        </a>
+        <div class="dropdown-menu drop-pers" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item " [routerLink]="['punto6']">Inscripcion</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item " [routerLink]="['categoria']">Categoria</a>
+        </div>
+      </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row mt-3"></div>
