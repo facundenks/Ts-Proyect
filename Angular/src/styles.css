@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+.boton-pers{
+    background-color: coral;
+    border: coral;
+}
+
+body{
+    background-image: url(./assets/img/fondo.png);
+}
+
+.tabla-pers{
+    background-color:wheat;
+
+}
+
+.titulo-pers{
+    text-align: center;
+    padding: 40px;
+    font-size: 60px;
+}
+
+header{
+    
+    background: linear-gradient(chartreuse,white);
+}
+
+.nav-pers{
+    background-color:cyan;
+    background: linear-gradient(cyan,white);
+    
+}
+
+.drop-pers{
+    background: linear-gradient(coral,gold);
+}
+
+/*Seccion central index*/
+
+section #contenedorPa{
+    background:radial-gradient(grey,white);
+    padding: 10px;    
+}
+
+aside #contenedorCol{
+    background:radial-gradient( skyblue,white);
+    padding: 3px;
+}
+
+aside h3{
+   
+    font-size: 20px;
+    color: navy;
+}
+
+aside ul{
+    list-style:none;
+}
+
+/*-----------------------*/
+
+footer{
+    background:linear-gradient( gold,white);
+}
